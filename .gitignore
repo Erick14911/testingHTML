@@ -1,0 +1,16 @@
+# files open with VIM
+*.swp
+# Comments WAIT
+commit.ics
+# pug 
+/pug/
+# SASS 
+/assets/static/sass/
+# TypeScript 
+/assets/static/ts/
+# Img
+/assets/public/img/
+# Font
+/assets/public/font/
+# Patern
+/assets/public/patern/
