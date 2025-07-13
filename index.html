@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<!-- Templates--><!DOCTYPE html>
 <html lang="ES">
   <!--@author:Erick14911-->
   <!--https://caniuse.com/-->
@@ -14,12 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link type="text/css" rel="stylesheet" href="assets/static/css/reset.css">
     <link type="text/css" rel="stylesheet" href="assets/static/css/fontStyle.css">
-    <link type="text/css" rel="stylesheet" href="assets/static/css/SASStyle.css">
+    <link type="text/css" rel="stylesheet" href="assets/static/css/animate.css">
     <link type="text/css" rel="stylesheet" href="assets/static/css/style.css">
     <link type="text/css" rel="stylesheet" href="assets/static/css/responsive.css">
     <script type="text/javascript" src="assets/static/js/script.js" defer></script>
     <link type="favicon.ico/x-icon" rel="shortcute icon" href="">
-    <title>Testing</title>
+    <title>Massively</title>
   </head>
   <body>
     <main class="container">
@@ -27,57 +28,91 @@
       <header class="hMassively">
         <hgroup class="header massively__header">
           <h1 class="header__title">The web page title</h1>
-          <h2 class="header__subtitle">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h2><a class="header__link" href="#id" target="_blank"><img src="https://placehold.co/320x150" loading="lazy" alt="Flecha"></a>
+          <h2 class="header__subtitle">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h2><a class="header__link" href="#id" target="_blank"><img src="https://placehold.co/100x100" loading="lazy" alt="Flecha"></a>
           <h1 class="header__title-hidden">The Massively</h1>
         </hgroup>
       </header>
       <nav class="nMassively">
-        <ul class="menu nav-left__menu">
+        <ul class="left_menu nMassively__menu">
           <li class="menu__onlist"><a class="menu__link" href="#id">Inicio</a></li>
-          <li class="menu__onlist"><a class="menu__link" href="#id">One</a>
-            <ul class="name__submenu">
-              <li class="name__onlist"><a class="menu__link" href="#id">A</a></li>
-              <li class="name__onlist"><a class="menu__link" href="#id">B</a></li>
-              <li class="name__onlist"><a class="menu__link" href="#id">C</a></li>
-            </ul>
+          <li class="menu__onlist"><a class="menu__link" href="#id">Conocenos</a>
+            <ol class="nMassively__submenu">
+              <li class="submenu__onlist"><a class="submenu__link" href="#id">Quienes somos?</a></li>
+              <li class="submenu__onlist"><a class="submenu__link" href="#id">Donde estamos?</a></li>
+              <li class="submenu__onlist"><a class="submenu__link" href="#id">Que hacemos?</a></li>
+            </ol>
           </li>
-          <li class="menu__onlist"><a class="menu__link" href="#id">Two</a></li>
-        </ul>
-        <ul class="menu nav-right__menu">
-          <li class="menu__onlist"><span class="menu__elist">%</span></li>
-          <li class="menu__onlist"><span class="menu__elist">$</span></li>
-          <li class="menu__onlist"><span class="menu__elist">@</span></li>
+          <li class="menu__onlist"><a class="menu__link" href="#id">Contactanos</a></li>
+          <ul class="right_menu nMassively__menu">
+            <li class="menu__onlist"><a class="menu__link" href="#id">facebook</a></li>
+            <li class="menu__onlist"><a class="menu__link" href="#id">myspace</a></li>
+            <li class="menu__onlist"><a class="menu__link" href="#id">twitter</a></li>
+          </ul>
         </ul>
       </nav>
-      <section class="info_container">
-        <article class="date info_container__date">
-          <!-- pre bdo( dir="rtl") abbr(title="") sub sup mark code-->
-          <h3 class="date__issue">Date
-            <hr>
-          </h3>
+      <section class="sMassively">
+        <article class="date sMassively__date">
+          <h3 class="date__issue"><hr/>Issue</h3>
         </article>
-        <article class="article info_container__article">
-          <!-- pre bdo( dir="rtl") abbr(title="") sub sup mark code-->
-          <h1 class="article__issue">Issue</h1>
-          <p class="article__text">lorem10<span class="article__span">lorem4</span></p>
+        <article class="info sMassively__info">
+          <h1 class="info__issue">Issue</h1>
+          <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum justo sed efficitur tempor. Nullam. </p>
         </article>
-        <article class="article_img info_container__article_img">
-          <figure class="article_img__fig"><img src="https://placehold.co/250x180" loading="lazy" alt="description" title="issue"></figure>
+        <article class="img sMassively__img">
+          <figure class="img__fig"><img src="https://placehold.co/900x580" loading="lazy" alt="description" title="issue"></figure>
         </article>
-        <article class="btn_more info_container__btn_more">
-          <button class="btn_more__btn" popovertarget="popover" onclick="_function()">PopOver</button>
-          <article class="name__over" id="popover" popover>
-            <p class="name__text">lorem10</p>
+        <article class="btn sMassively__btn">
+          <button class="btn" popovertarget="popover">PopOver</button>
+          <article class="btn__over" id="popover" popover>
+            <p class="over__text">Hola</p>
           </article>
-        </article>
-      </section>
-      <aside class="form_contact">
-        <article class="contact form_contact__contact">
-          <details class="contact__details">
-            <summary class="details__summary">Issue</summary><span class="details__info">show</span>
+          <details class="sMassively__details">
+            <summary class="details__summary">Issue</summary><span class="details__info">show me</span>
           </details>
         </article>
+      </section>
+      <aside class="aMassively">
+        <article class="contact aMassively__contact">
+          <form class="contact__form" id="contact" action="index.html" method="POST"></form>
+          <fieldset>
+            <legend>Contacto</legend>
+            <aside class="form__box">
+              <label class="label" for="input_n">Nombre</label>
+              <input class="input" id="name" name="name" type="text" required>
+              <label class="label" for="input_n">Correo Electronico</label>
+              <input class="input" id="email" name="email" type="password" pattern="[a-zA-Z ]+" required>
+              <label class="label" for="input_n">Mensaje</label>
+              <textarea class="textarea" id="comment" name="comment" rows="10" cols="50" wrap="soft" placeholder="write"></textarea>
+              <input class="submit" id="submit" name="submit" type="submit" value="Enviar">
+            </aside>
+          </fieldset>
+          <aside class="contact__info">
+            <hgroup class="contact info__contact">
+              <h1 class="contact__title">Direccion</h1>
+              <h3 class="contact__info">SubTitulo</h3>
+            </hgroup>
+            <hgroup class="contact info__contact">
+              <h1 class="contact__title">Telefono</h1>
+              <h3 class="contact__info">SubTitulo</h3>
+            </hgroup>
+            <hgroup class="contact info__contact">
+              <h1 class="contact__title">Correo electronico</h1>
+              <h3 class="contact__info">SubTitulo</h3>
+            </hgroup>
+            <hgroup class="contact info__contact">
+              <h1 class="contact__title">Redes sociales</h1>
+              <h3 class="contact__info">SubTitulo</h3>
+            </hgroup>
+          </aside>
+        </article>
       </aside>
+      <footer class="fMassively">
+        <ul class="foot fMassively__foot">
+          <li class="foot_onlist"><a class="foot__link" href="#id" title="network">Untitile</a></li>
+          <li class="foot__onlist"><a class="foot__link" href="#id" title="network">Design HTML5</a></li>
+          <li class="foot__onlist"><a class="foot__link" href="#id" title="network">Demo Imagenes</a></li>
+        </ul>
+      </footer>
     </main>
   </body>
 </html>
