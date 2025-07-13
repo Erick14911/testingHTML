@@ -3,7 +3,7 @@
 # Comments WAIT
 commit.ics
 # pug 
-/pug/
+#/pug/
 # SASS 
 /assets/static/sass/
 # TypeScript 

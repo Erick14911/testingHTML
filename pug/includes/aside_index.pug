@@ -1,0 +1,26 @@
+aside.aMassively
+  article.contact.aMassively__contact
+    form#contact.contact__form(action="index.html" method="POST")
+    fieldset
+      legend Contacto
+      aside.form__box
+        label.label(for="input_n")!= `Nombre`
+        input#name.input(name="name" type="text" required)
+        label.label(for="input_n")!= `Correo Electronico`
+        input#email.input(name="email" type="password" pattern="[a-zA-Z ]+" required)
+        label.label(for="input_n")!= `Mensaje`
+        textarea#comment.textarea(name="comment" rows="10" cols="50" wrap="soft" placeholder="write")
+        input#submit.submit(name="submit" type="submit" value="Enviar")
+    aside.contact__info
+      hgroup.contact.info__contact
+        h1.contact__title!= `Direccion`
+        h3.contact__info!= `SubTitulo`
+      hgroup.contact.info__contact
+        h1.contact__title!= `Telefono`
+        h3.contact__info!= `SubTitulo`
+      hgroup.contact.info__contact
+        h1.contact__title!= `Correo electronico`
+        h3.contact__info!= `SubTitulo`
+      hgroup.contact.info__contact
+        h1.contact__title!= `Redes sociales`
+        h3.contact__info!= `SubTitulo`

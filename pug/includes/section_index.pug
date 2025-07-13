@@ -1,0 +1,16 @@
+section.sMassively
+  article.date.sMassively__date
+    h3.date__issue!= `<hr/>Issue`
+  article.info.sMassively__info
+    h1.info__issue!= `Issue`
+    p.info__text!= `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum justo sed efficitur tempor. Nullam. `
+  article.img.sMassively__img
+    figure.img__fig
+      img(src="https://placehold.co/900x580" loading="lazy" alt="description" title="issue")
+  article.btn.sMassively__btn
+    button.btn(popovertarget="popover")!= `PopOver`
+    article#popover.btn__over(popover)
+      p.over__text!= `Hola`
+    details.sMassively__details
+      summary.details__summary!= `Issue`
+      span.details__info!= `show me`
